@@ -36,3 +36,5 @@ import { create } from "@/components/form"
 
 export default create()(YourForm);
 ```
+
+![alt text](https://raw.githubusercontent.com/yuanzhizhu/ant-design-mobile-form/master/ex.gif)
