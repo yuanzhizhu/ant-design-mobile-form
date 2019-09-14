@@ -23,7 +23,7 @@ export const addErrorExplanation = Component => {
 export const create = options => {
   return FormComponent => {
     class NewFormComponent extends React.Component {
-      myGetFieldDecorator = (name, option) => element => {
+      myGetFieldDecorator = (name, option = {}) => element => {
         // 下面这行代码主要用于validator；如果不使用validator可以删除
         option.validateFirst =
           option.validateFirst === undefined ? true : option.validateFirst;
@@ -52,4 +52,3 @@ export const create = options => {
     return createForm(options)(NewFormComponent);
   };
 };
-
