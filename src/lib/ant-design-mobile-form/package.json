@@ -1,0 +1,34 @@
+{
+  "name": "ant-design-mobile-form",
+  "version": "1.0.0",
+  "description": "适用ant-design-mobile的带错误检测的表单组件",
+  "main": "./cjs/index.js",
+  "module": "./es/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanzhizhu/ant-design-mobile-form.git"
+  },
+  "keywords": [
+    "ant-design-mobile"
+  ],
+  "author": "竹致远",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuanzhizhu/ant-design-mobile-form/issues"
+  },
+  "homepage": "https://github.com/yuanzhizhu/ant-design-mobile-form#readme",
+  "peerDependencies": {
+    "react": ">=16",
+    "rc-form": ">=2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}

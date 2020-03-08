@@ -1,0 +1,29 @@
+.am-list-item.am-input-item {
+  padding-left: 0 !important;
+}
+
+.am-list-item.am-input-item .am-list-line {
+  padding-right: 0 !important;
+}
+
+.am-list-body {
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+  background-color: transparent !important;
+}
+
+.am-list-body::before {
+  display: none !important;
+}
+
+.am-list-body::after {
+  display: none !important;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 16px;
+  min-height: 100vh;
+  background-color: white;
+}
