@@ -1,30 +1,36 @@
-# Ant-Design-Mobile-form文档
+# Ant-Design-Mobile-form 文档
+
+## 安装
+
+`npm i ant-design-mobile-form`
 
 ## 场景
+
 表单怎么优雅做校验呢？
 
-在PC端，一个做的比较优雅的方案是Ant Design的表单组件。它可以通过简单的rule配置，来实现“必填”，“自定义错误提示”，甚至自定义校验规则。
-Ant Design官网：https://3x.ant.design/components/form-cn/
+在 PC 端，一个做的比较优雅的方案是 Ant Design 的表单组件。它可以通过简单的 rule 配置，来实现“必填”，“自定义错误提示”，甚至自定义校验规则。
+Ant Design 官网：https://3x.ant.design/components/form-cn/
 
-然而在移动端，似乎从没一个组件库，做过类似的表单封装。哪怕Ant Design Mobile，也没有做这个事情。
+然而在移动端，似乎从没一个组件库，做过类似的表单封装。哪怕 Ant Design Mobile，也没有做这个事情。
 
-所以需要一个库，来实现这个功能。基于Ant Design Mobile的用户基数较大，本库将基于Ant Design Mobile。
+所以需要一个库，来实现这个功能。基于 Ant Design Mobile 的用户基数较大，本库将基于 Ant Design Mobile。
 
-## 示例
-点击(查看示例)[https://yuanzhizhu.github.io/ant-design-mobile-form/]
+## 在线示例
 
-## 用法
+点击[查看示例](https://yuanzhizhu.github.io/ant-design-mobile-form/index.html)
+
+## 基本用法
 
 ```jsx
 import React from "react";
-import { List, Toast, InputItem as _InputItem, Button } from "antd-mobile";
+import { List, Toast, Button, InputItem as _InputItem } from "antd-mobile";
 import { create, addErrorExplanation } from "./lib/ant-design-mobile-form";
 import "./App.css";
 
 const InputItem = addErrorExplanation(_InputItem);
 
 const checkPhone = (rule, value, callback) => {
-    // check code
+  // check code
 };
 
 class App extends React.Component {
@@ -79,4 +85,12 @@ class App extends React.Component {
 export default create()(App);
 ```
 
+## API
 
+#### 1、addErrorExplanation(Component)
+
+对 Ant Design Mobile 原生的组件，如 `InputItem`，`Picker` 等组件，用 addErrorExplanation 包裹，返回一个新的组件：`const MyInputItem = addErrorExplanation(InputItem)`。
+
+#### 2、create()(FormComponent)
+
+在 Ant Design Mobile 里面，没有 `Form` 组件，所以这边的 `FormComponent` 更像是一个概念，一种代码层次上的 `Form`，如：`export default create()(App)`
