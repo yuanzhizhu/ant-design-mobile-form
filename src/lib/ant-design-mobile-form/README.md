@@ -1,8 +1,8 @@
 # Ant-Design-Mobile-form 文档
 
-## 安装
+## github
 
-`npm i ant-design-mobile-form`
+点击(查看github)[https://github.com/yuanzhizhu/ant-design-mobile-form]，欢迎提issue～
 
 ## 场景
 
