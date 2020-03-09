@@ -1,5 +1,18 @@
 # Ant-Design-Mobile-form文档
 
+## 场景
+表单怎么优雅做校验呢？
+
+在PC端，一个做的比较优雅的方案是Ant Design的表单组件。它可以通过简单的rule配置，来实现“必填”，“自定义错误提示”，甚至自定义校验规则。
+Ant Design官网：https://3x.ant.design/components/form-cn/
+
+然而在移动端，似乎从没一个组件库，做过类似的表单封装。哪怕Ant Design Mobile，也没有做这个事情。
+
+所以需要一个库，来实现这个功能。基于Ant Design Mobile的用户基数较大，本库将基于Ant Design Mobile。
+
+## 示例
+点击(查看示例)[https://yuanzhizhu.github.io/ant-design-mobile-form/]
+
 ## 用法
 
 ```jsx
