@@ -1,6 +1,6 @@
 {
   "name": "ant-design-mobile-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "适用ant-design-mobile的带错误检测的表单组件",
   "main": "./cjs/index.js",
   "module": "./es/index.js",

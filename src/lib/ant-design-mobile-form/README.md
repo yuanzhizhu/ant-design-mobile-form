@@ -2,7 +2,7 @@
 
 ## github
 
-点击(查看github)[https://github.com/yuanzhizhu/ant-design-mobile-form]，欢迎提issue～
+点击[查看github](https://github.com/yuanzhizhu/ant-design-mobile-form)，欢迎提issue～
 
 ## 场景
 
